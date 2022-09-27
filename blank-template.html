@@ -9,28 +9,29 @@
   <body>
     <h1>Table template</h1>
     <table>
+        <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
     <colgroup>
-        <col>
-        <col>
+        <col span="2">
         <col style="border: 2.5px solid black ">
+        <col span="9">
+        
     </colgroup>
         <thead>
-        <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
-        </thead>
-        <tbody>
         <tr>
             <td colspan="2">&nbsp;</td>
             <th scope="col">Name</th>
-            <th scope="col">Mass<br/>(10<sup>24</sup>kg)</th>
+            <th scope="col">Mass<br>(10<sup>24</sup>kg)</th>
             <th scope="col">Diameter<br>(km)</th>
             <th scope="col">Density<br>(kg/m<sup>3</sup>)</th>
             <th scope="col">Gravity<br>(m/s<sup>2</sup>)</th>
             <th scope="col">Length<br>of day<br>(hours)</th>
             <th scope="col">Distance<br>from Sun<br>(10<sup>6</sup>km)</th>
-            <th scope="col">Mean<br>temperature<br>(&#8451)</th>
+            <th scope="col">Mean<br>temperature<br>(°C)</th>
             <th scope="col">Number<br>of<br>moons</th>
             <th scope="col">Notes</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
             <th rowspan="4" colspan="2" scope="rowgroup">Terrestrial planets</th>
             <th scope="row">Mercury</th>
@@ -81,9 +82,9 @@
             <td>The red planet</td>
         </tr>
         <tr>
-            <th rowspan="4" id="jovian">Jovian<br>planets</th>
-            <th rowspan="2" header="gas">Gas<br>giants</th>
-            <th header="jupiter gas jovian">Jupiter</th>
+            <th rowspan="4" scope="rowgroup">Jovian<br>planets</th>
+            <th rowspan="2" scope="rowgroup">Gas<br>giants</th>
+            <th scope="row">Jupiter</th>
             <td>1898</td>
             <td>142,984</td>
             <td>1326</td>
@@ -95,7 +96,7 @@
             <td>The largest<br>planet</td>
         </tr>
         <tr>
-            <th header="saturn gas jovian">Saturn</th>
+            <th scope="row">Saturn</th>
             <td>568</td>
             <td>120,536</td>
             <td>687</td>
@@ -107,8 +108,8 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th rowspan="2" header="ice jovian">Ice<br>giants</th>
-            <th header="uranus ice jovian">Uranus</th>
+            <th rowspan="2" scope="rowgroup">Ice<br>giants</th>
+            <th scope="row">Uranus</th>
             <td>86.8</td>
             <td>51,118</td>
             <td>1271</td>
@@ -120,7 +121,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th header="neptune ice jovian">Neptune</th>
+            <th scope="row">Neptune</th>
             <td>102</td>
             <td>49,528</td>
             <td>1638</td>
@@ -132,7 +133,7 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <th colspan="2" scope="rowgroup">Dwarf plantes</th>
+            <th colspan="2" scope="row">Dwarf plantes</th>
             <th scope="row">Pluto</th>
             <td>0.0146</td>
             <td>2,370</td>
@@ -152,4 +153,7 @@
 
 
   >
+        
+        
+       
         
